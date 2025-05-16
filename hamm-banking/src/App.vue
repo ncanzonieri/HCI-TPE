@@ -6,9 +6,12 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <div class="layout">
     <header>
-      <img alt="app logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
+      <div class="logo-container">
+        <img alt="Vue logo" class="logo" src="./assets/logo.png"/>
+        <h1 class="green">Hamm</h1>
+      </div>
       <div class="wrapper">
-        <HelloWorld msg="Hamm" />
+        
         <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
@@ -29,13 +32,31 @@ import HelloWorld from './components/HelloWorld.vue'
   min-height: 100vh;
 }
 
+.wrapper {
+  width: 100%;
+}
+
+h1.green{
+  font-family: 'Lily Script One';
+  font-weight: 500;
+  font-size: 2.6rem;
+  position: relative;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
   border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 15%;
   min-height: 100vh;
   padding: 2rem 1rem;
@@ -43,8 +64,9 @@ header {
 }
 
 .logo {
-  display: block;
-  margin-bottom: 2rem;
+  height: 4rem;
+  width: auto;
+  margin-bottom: 0;
 }
 
 nav {
@@ -95,6 +117,7 @@ nav a {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   nav {

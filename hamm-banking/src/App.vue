@@ -4,42 +4,62 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="app logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
+  <div class="layout">
+    <header>
+      <img alt="app logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
+      <div class="wrapper">
+        <HelloWorld msg="Hamm" />
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/inicio">Inicio</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="Hamm Banking" />
-      <!--
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      -->
-    </div>
-  </header>
-
-  <RouterView />
+    <main class="main-content">
+      <RouterView />
+    </main>
+  </div>  
 </template>
 
 <style scoped>
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  position: fixed;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem;
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
+  font-size: 1rem;
+  text-align: left;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 nav a.router-link-exact-active {
+  border-left: 0.25rem solid var(--color-border);
+  background-color: var(--color-primary);
   color: var(--color-text);
 }
 
@@ -48,13 +68,16 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  display: block;
+  padding: 0.5rem 1rem;
+
 }
 
-nav a:first-of-type {
-  border: 0;
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  min-height: 100vh;
+  margin-left: 15%;
 }
 
 @media (min-width: 1024px) {

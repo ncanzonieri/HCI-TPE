@@ -1,21 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <div class="layout">
     <header>
       <div class="logo-container">
-        <img alt="Vue logo" class="logo" src="./assets/logo.png"/>
-        <h1 class="green">Hamm</h1>
+        <img alt="Hamm Logo" class="logo" src="./assets/logo.png"/>
+        <h1 class="textLogo">Hamm</h1>
       </div>
       <div class="wrapper">
         
         <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/inicio">Inicio</RouterLink>
+          <RouterLink to="/">Inicio</RouterLink>
+          <RouterLink to="/history">Historial</RouterLink>
+          <RouterLink to="/account">Cuenta</RouterLink>
+          <RouterLink to="/investments">Inversiones</RouterLink>
+          <RouterLink to="/cards">Tarjetas</RouterLink>
+          <RouterLink to="/settings">Ajustes</RouterLink>
         </nav>
       </div>
     </header>
@@ -36,7 +38,7 @@ import HelloWorld from './components/HelloWorld.vue'
   width: 100%;
 }
 
-h1.green{
+h1.textLogo{
   font-family: 'Lily Script One';
   font-weight: 500;
   font-size: 2.6rem;

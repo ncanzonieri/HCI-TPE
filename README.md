@@ -16,14 +16,16 @@ git clone https://github.com/ncanzonieri/HCI-TPE.git
 npm install
 ```
 
-## 4 - Compile and Hot-Reload for Development
+## 4 - Compilación
+
+#### Hot-Reload para Desarollo
 
 Dentro de la carpeta hamm-banking
 ```sh
 npm run dev
 ```
 
-## 4 - Compile and Minify for Production
+#### Para Production
 
 Dentro de la carpeta hamm-banking
 ```sh

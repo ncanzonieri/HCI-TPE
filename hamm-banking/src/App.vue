@@ -13,10 +13,9 @@ import { RouterLink, RouterView } from 'vue-router'
         
         <nav>
           <RouterLink to="/">Inicio</RouterLink>
+          <RouterLink to="/cards">Tarjetas</RouterLink>
           <RouterLink to="/history">Historial</RouterLink>
           <RouterLink to="/account">Cuenta</RouterLink>
-          <RouterLink to="/investments">Inversiones</RouterLink>
-          <RouterLink to="/cards">Tarjetas</RouterLink>
           <RouterLink to="/settings">Ajustes</RouterLink>
         </nav>
       </div>
@@ -48,15 +47,12 @@ h1.textLogo{
 
 .logo-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
-  border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -68,7 +64,7 @@ header {
 .logo {
   height: 4rem;
   width: auto;
-  margin-bottom: 0;
+  margin-left: 1rem;
 }
 
 nav {
@@ -109,10 +105,6 @@ nav a {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {

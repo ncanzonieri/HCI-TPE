@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import PageLayout from '@/components/PageLayout.vue';
+
+</script>
+
 <template>
-    <main class="mainPages">
-        <div class="cardsPage">
-            <h1>Estas son tus Tarjetas!</h1>
-            <p>Para modificar el contendio de esta página, tenes que ir a 'CardsView.vue'</p>
+    <PageLayout title="Tarjetas">
+        <div class="cards">
+            <h1>Gestión de Tarjetas</h1>
+            <p>Aquí puedes ver y gestionar tus tarjetas.</p>
         </div>
-    </main>
+    </PageLayout>
 </template>

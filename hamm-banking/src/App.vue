@@ -9,14 +9,12 @@ import { RouterLink, RouterView } from 'vue-router'
         <img alt="Hamm Logo" class="logo" src="./assets/logo.png"/>
         <h1 class="textLogo">Hamm</h1>
       </div>
-      <div class="wrapper">
-        
+      <div class="tab">
         <nav>
           <RouterLink to="/">Inicio</RouterLink>
           <RouterLink to="/cards">Tarjetas</RouterLink>
           <RouterLink to="/history">Historial</RouterLink>
           <RouterLink to="/account">Cuenta</RouterLink>
-          <RouterLink to="/settings">Ajustes</RouterLink>
         </nav>
       </div>
     </header>
@@ -33,7 +31,7 @@ import { RouterLink, RouterView } from 'vue-router'
   min-height: 100vh;
 }
 
-.wrapper {
+.tab {
   width: 100%;
 }
 
@@ -46,19 +44,21 @@ h1.textLogo{
 
 
 .logo-container {
+  padding: 1.1rem 1rem 0;
+  width: 100%;
   display: flex;
   margin-bottom: 2rem;
 }
 
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   width: 15%;
-  min-height: 100vh;
-  padding: 2rem 1rem;
   position: fixed;
+  background-color: white;
+  border-right: 0.1rem solid #e2cbcb;
 }
 
 .logo {
@@ -78,28 +78,32 @@ nav {
 }
 
 nav a.router-link-exact-active {
+  width: 100%;
+  font-weight: bold;
   border-left: 0.25rem solid var(--color-border);
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: #222;
 }
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  width: 100%;
 }
 
 nav a {
+  width: 100%;
   display: block;
   padding: 0.5rem 1rem;
+  font-weight: bold;
 
 }
 
 .main-content {
   flex: 1;
-  padding: 2rem;
   min-height: 100vh;
   margin-left: 15%;
 }
-
+/*
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -107,7 +111,7 @@ nav a {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  header .wrapper {
+  header .tab {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
@@ -123,4 +127,5 @@ nav a {
     margin-top: 1rem;
   }
 }
+  */
 </style>

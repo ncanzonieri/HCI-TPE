@@ -1,8 +1,12 @@
+<script setup lang="js">
+    import PageLayout from '@/components/PageLayout.vue';
+</script>>
+
 <template>
-    <main class="mainPages">
-        <div class="homePage">
-            <h1>Esto es el Inicio!</h1>
-            <p>Para modificar el contendio de esta página, tenes que ir a 'HomeView.vue'</p>
+    <PageLayout title="Inicio">
+        <div class="home">
+            <h1>Bienvenido a Hamm Banking</h1>
+            <p>Tu banco digital al alcance de tu mano.</p>
         </div>
-    </main>
+    </PageLayout>
 </template>

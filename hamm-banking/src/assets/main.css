@@ -22,7 +22,7 @@ a,
 }
 
 .mainPages {
-  background-color: white;
+  background-color: rgb(255, 230, 243);
   background-image: url('../assets/main_bg.png');
   background-size: cover;
   background-repeat: no-repeat;

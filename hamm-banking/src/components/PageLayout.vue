@@ -20,7 +20,8 @@
 <style scoped>
 
 .page-title {
-    font-family: 'Lily Script One', cursive;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
     font-size: 2.6rem;
     margin-bottom: 1.5rem;
     width: 85%;
@@ -31,7 +32,7 @@
     box-sizing: border-box;
     top: 0;
     right: 0;
-    color: rgb(209, 123, 171);
+    color: #000000;
     border-bottom: 0.1rem solid #e2cbcb;
 }
 .page-content {

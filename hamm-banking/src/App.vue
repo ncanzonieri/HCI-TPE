@@ -136,7 +136,7 @@ nav a {
   width: 100%;
   display: block;
   padding: 0.5rem 1rem;
-  color: #B1B1B1;
+  color: #867171;
   font-family: 'Inter', sans-serif;
 }
 

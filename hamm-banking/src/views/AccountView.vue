@@ -5,7 +5,7 @@ import PageLayout from '@/components/PageLayout.vue';
 <template>
     <PageLayout title="Cuenta">
         <div class="account">
-            <h1>Detalles de la Cuenta</h1>
+            <h1>User</h1>
             <p>Aquí puedes ver los detalles de tu cuenta.</p>
         </div>
     </PageLayout>
